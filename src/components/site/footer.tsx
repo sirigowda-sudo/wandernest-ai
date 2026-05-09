@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Compass, Github, Instagram, Twitter } from "lucide-react";
+import { Camera, Compass, Globe, Send } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,7 +19,7 @@ export function Footer() {
             Travel smarter, wander deeper.
           </p>
           <div className="mt-6 flex gap-3">
-            {[Twitter, Instagram, Github].map((Icon, i) => (
+            {[Send, Camera, Globe].map((Icon, i) => (
               <a
                 key={i}
                 href="#"
