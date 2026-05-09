@@ -1,5 +1,6 @@
 import { Header } from "./header";
 import { Footer } from "./footer";
+import { ChatWidget } from "./chat-widget";
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,6 +8,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
       <Header />
       <main className="pt-24">{children}</main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
